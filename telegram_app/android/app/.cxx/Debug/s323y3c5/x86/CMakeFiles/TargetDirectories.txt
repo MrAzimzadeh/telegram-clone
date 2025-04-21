@@ -1,0 +1,2 @@
+C:/Users/elmar/OneDrive/Documents/Coding/Flutter/telegram-clone/telegram_app/android/app/.cxx/Debug/s323y3c5/x86/CMakeFiles/edit_cache.dir
+C:/Users/elmar/OneDrive/Documents/Coding/Flutter/telegram-clone/telegram_app/android/app/.cxx/Debug/s323y3c5/x86/CMakeFiles/rebuild_cache.dir
