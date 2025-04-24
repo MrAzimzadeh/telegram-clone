@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:telegram_app/app.dart';
+import 'package:telegram_app/ui/app.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 

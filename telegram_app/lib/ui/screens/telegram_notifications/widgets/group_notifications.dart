@@ -21,27 +21,27 @@ class _GroupNotificationsWidgetState extends State<GroupNotificationsWidget> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(height: 42),
-        const Text(AppTexts.groupShowNotifications),
+        const Text(AppTexts.notifGroupShowNotifications),
         SizedBox(height: 6),
         const Divider(color: AppColors.dividerLine, height: 1),
         CustomSwitchTile(
-          title: AppTexts.showNotifications,
+          title: AppTexts.notifShowNotifications,
           value: showNotifications,
           onChanged: (val) => setState(() => showNotifications = val),
         ),
         const Divider(color: AppColors.dividerLine,height: 1),
         CustomSwitchTile(
-          title: AppTexts.messagePreview,
+          title: AppTexts.notifMessagePreview,
           value: messagePreview,
           onChanged: (val) => setState(() => messagePreview = val),
         ),
         const Divider(color: AppColors.dividerLine, height: 1),
-        const SimpleTile(title: AppTexts.sound, trailing: AppTexts.soundNone),
+        const SimpleTile(title: AppTexts.notifSound, trailing: AppTexts.notifSoundNone),
         const Divider(color: AppColors.dividerLine, height: 1),
-        const SimpleTile(title: AppTexts.exceptions, trailing: AppTexts.addText),
+        const SimpleTile(title: AppTexts.notifExceptions, trailing: AppTexts.notifAddText),
         const Divider(color: AppColors.dividerLine, height: 1),
         SizedBox(height: 7),
-        const Text(AppTexts.setCustomNotifications),
+        const Text(AppTexts.notifSetCustomNotifications),
       ],
     );
   }

@@ -20,7 +20,7 @@ class SimpleTile extends StatelessWidget {
         title: Text(
           title,
           style: const TextStyle(
-            color: AppColors.light,
+            color: AppColors.primaryTextColor,
             fontSize: 16,
             fontWeight: FontWeight.w500,
           ),

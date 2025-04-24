@@ -22,7 +22,7 @@ class CustomSwitchTile extends StatelessWidget {
         title: Text(
           title,
           style: const TextStyle(
-            color: AppColors.light,
+            color: AppColors.primaryTextColor,
             fontSize: 17,
             fontWeight: FontWeight.w400,
           ),
