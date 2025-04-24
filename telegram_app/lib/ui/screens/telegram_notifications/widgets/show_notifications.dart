@@ -24,18 +24,18 @@ class _ShowNotificationsWidgetState extends State<ShowNotificationsWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text
-          (AppTexts.showNotificationsFrom),
+          (AppTexts.notifShowNotificationsFrom),
            SizedBox(height: 6),
           const Divider(color: AppColors.dividerLine, height: 1),
           CustomSwitchTile(
-            title: AppTexts.allAccounts,
+            title: AppTexts.notifAllAccounts,
             value: allAccounts,
             onChanged: (val) => setState(() => allAccounts = val),
           ),
           const Divider(color: AppColors.dividerLine, height: 1),
           SizedBox(height: 7),
           const Text
-          (AppTexts.turnOffToReceiveNotifications),
+          (AppTexts.notifTurnOffToReceiveNotifications),
           SizedBox(
             height: 42,
           ),

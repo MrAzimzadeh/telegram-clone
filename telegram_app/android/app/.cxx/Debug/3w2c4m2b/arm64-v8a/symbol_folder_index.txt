@@ -1,0 +1,1 @@
+C:\Users\elmar\OneDrive\Documents\Coding\Flutter\telegram-clone\telegram_app\build\app\intermediates\cxx\Debug\3w2c4m2b\obj\arm64-v8a
