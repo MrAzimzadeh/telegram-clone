@@ -20,164 +20,163 @@ class _AuthScreenState extends State<AuthScreen> {
     return Scaffold(
       backgroundColor: AppColors.background,
       body: SafeArea(
-        child: Center(
-          child: Column(children: [
-            Padding(
-              padding: EdgeInsets.only(
-                  right: 17.w, left: 16.w, top: 10.h, bottom: 10.h),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    AppTexts.authCancel,
-                    style: TextStyle(
-                        color: AppColors.primaryTextColor,
-                        fontFamily: 'SF-Pro-Text',
-                        fontSize: 17.sp,
-                        fontWeight: FontWeight.w400),
-                  ),
-                  Text(
-                    AppTexts.authNext,
-                    style: TextStyle(
-                        color: AppColors.primaryTextColor,
-                        fontFamily: 'SF-Pro-Text',
-                        fontSize: 17.sp,
-                        fontWeight: FontWeight.w600),
-                  )
-                ],
-              ),
-            ),
-
-            SizedBox(height: 17.h),
-
-            // Title
-            Text(
-              AppTexts.authYourPhone,
-              style: TextStyle(
-                  color: AppColors.primaryTextColor,
-                  fontFamily: 'SF-Pro-Display',
-                  fontSize: 30.sp,
-                  fontWeight: FontWeight.w300),
-            ),
-
-            SizedBox(height: 17.h),
-
-            // Subtitle
-            Padding(
-              padding: EdgeInsets.only(left: 50.w, right: 50.w),
-              child: Text(
-                textAlign: TextAlign.center,
-                AppTexts.authSubtitle,
-                style: TextStyle(
-                    color: AppColors.primaryTextColor,
-                    fontFamily: 'SF-Pro-Text',
-                    fontSize: 16.sp,
-                    fontWeight: FontWeight.w400),
-              ),
-            ),
-
-            SizedBox(height: 44.h),
-
-            Container(
-              margin: EdgeInsets.only(left: 15.w),
-              height: 56.h,
-              decoration: BoxDecoration(
-                  border: Border(
-                      top: BorderSide(color: AppColors.borderColor),
-                      bottom: BorderSide(color: AppColors.borderColor))),
-              child: Center(
+        child: SingleChildScrollView(
+          child: Center(
+            child: Column(children: [
+              Padding(
+                padding: EdgeInsets.only(
+                    right: 17.w, left: 16.w, top: 10.h, bottom: 10.h),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 4.w),
-                      child: Text(
-                        AppTexts.authUsa,
-                        style: TextStyle(
-                            color: AppColors.primaryTextColor,
-                            fontFamily: 'SF-Pro-Display',
-                            fontSize: 20.sp,
-                            fontWeight: FontWeight.w400),
-                      ),
+                    Text(
+                      AppTexts.authCancel,
+                      style: TextStyle(
+                          color: AppColors.primaryTextColor,
+                          fontFamily: 'SF-Pro-Text',
+                          fontSize: 17.sp,
+                          fontWeight: FontWeight.w400),
+                    ),
+                    Text(
+                      AppTexts.authNext,
+                      style: TextStyle(
+                          color: AppColors.primaryTextColor,
+                          fontFamily: 'SF-Pro-Text',
+                          fontSize: 17.sp,
+                          fontWeight: FontWeight.w600),
                     )
                   ],
                 ),
               ),
-            ),
-            Container(
-              margin: EdgeInsets.only(left: 15.w),
-              height: 56.h,
-              decoration: BoxDecoration(
-                  border:
-                      Border(bottom: BorderSide(color: AppColors.borderColor))),
-              child: Center(
-                child: Row(
-                  children: [
-                    AuthScreenStack(),
-                    Expanded(
-                      child: Padding(
-                        padding: EdgeInsets.only(left: 12.5.w),
-                        child: TextField(
-                          cursorColor: AppColors.cursorColor,
-                          cursorRadius: Radius.circular(2.r),
-                          cursorHeight: 26.h,
-                          keyboardType: TextInputType.phone,
+
+              17.verticalSpace,
+
+              // Title
+              Text(
+                AppTexts.authYourPhone,
+                style: TextStyle(
+                    color: AppColors.primaryTextColor,
+                    fontFamily: 'SF-Pro-Display',
+                    fontSize: 30.sp,
+                    fontWeight: FontWeight.w300),
+              ),
+
+              17.verticalSpace,
+
+              // Subtitle
+              Padding(
+                padding: EdgeInsets.only(left: 50.w, right: 50.w),
+                child: Text(
+                  textAlign: TextAlign.center,
+                  AppTexts.authSubtitle,
+                  style: TextStyle(
+                      color: AppColors.primaryTextColor,
+                      fontFamily: 'SF-Pro-Text',
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.w400),
+                ),
+              ),
+
+              44.verticalSpace,
+
+              Container(
+                margin: EdgeInsets.only(left: 15.w),
+                height: 56.h,
+                decoration: BoxDecoration(
+                    border: Border(
+                        top: BorderSide(color: AppColors.borderColor),
+                        bottom: BorderSide(color: AppColors.borderColor))),
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(left: 4.w),
+                        child: Text(
+                          AppTexts.authUsa,
                           style: TextStyle(
-                            color: AppColors.primaryTextColor,
-                            fontFamily: 'SF-Pro-Display',
-                            fontSize: 20.sp,
-                            fontWeight: FontWeight.w400,
-                          ),
-                          decoration: InputDecoration(
-                            hintText: AppTexts.authPhoneNumber,
-                            hintStyle: TextStyle(
-                              color: AppColors.authHintColor,
+                              color: AppColors.primaryTextColor,
+                              fontFamily: 'SF-Pro-Display',
+                              fontSize: 20.sp,
+                              fontWeight: FontWeight.w400),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 15.w),
+                height: 56.h,
+                decoration: BoxDecoration(
+                    border: Border(
+                        bottom: BorderSide(color: AppColors.borderColor))),
+                child: Center(
+                  child: Row(
+                    children: [
+                      AuthScreenStack(),
+                      Expanded(
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 12.5.w),
+                          child: TextField(
+                            cursorColor: AppColors.cursorColor,
+                            cursorRadius: Radius.circular(2.r),
+                            cursorHeight: 26.h,
+                            keyboardType: TextInputType.phone,
+                            style: TextStyle(
+                              color: AppColors.primaryTextColor,
                               fontFamily: 'SF-Pro-Display',
                               fontSize: 20.sp,
                               fontWeight: FontWeight.w400,
                             ),
-                            border: InputBorder.none,
-                            isCollapsed: true,
+                            decoration: InputDecoration(
+                              hintText: AppTexts.authPhoneNumber,
+                              hintStyle: TextStyle(
+                                color: AppColors.authHintColor,
+                                fontFamily: 'SF-Pro-Display',
+                                fontSize: 20.sp,
+                                fontWeight: FontWeight.w400,
+                              ),
+                              border: InputBorder.none,
+                              isCollapsed: true,
+                            ),
                           ),
                         ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+
+              14.5.verticalSpace,
+              // Switch
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 10.h),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      AppTexts.authSync,
+                      style: TextStyle(
+                        color: AppColors.primaryTextColor,
+                        fontFamily: 'SF-Pro-Text',
+                        fontSize: 17.sp,
+                        fontWeight: FontWeight.w400,
                       ),
+                    ),
+                    CupertinoSwitch(
+                      value: _cupertinoValue,
+                      onChanged: (value) {
+                        setState(() {
+                          _cupertinoValue = value;
+                        });
+                      },
                     )
                   ],
                 ),
-              ),
-            ),
-
-            SizedBox(
-              height: 14.5.h,
-            ),
-
-            // Switch
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 10.h),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    AppTexts.authSync,
-                    style: TextStyle(
-                      color: AppColors.primaryTextColor,
-                      fontFamily: 'SF-Pro-Text',
-                      fontSize: 17.sp,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  CupertinoSwitch(
-                    value: _cupertinoValue,
-                    onChanged: (value) {
-                      setState(() {
-                        _cupertinoValue = value;
-                      });
-                    },
-                  )
-                ],
-              ),
-            )
-          ]),
+              )
+            ]),
+          ),
         ),
       ),
     );
