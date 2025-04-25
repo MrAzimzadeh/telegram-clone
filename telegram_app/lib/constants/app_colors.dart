@@ -14,9 +14,18 @@ class AppColors {
   static const Color white = Color.fromRGBO(255, 255, 255, 1);
   static const Color stoneCold = Color(0xA6545458);
   static const Color silverPhoenix = Color(0x4DEBEBF5);
-
+  static const Color intheDark = Color(0xFF3D3D3F);
+  static const Color satinDeepBlack = Color(0xFF1C1C1E);
+  static const Color dimGray = Color(0xFF666666);
+  static const Color turfMaster = Color(0xFF08A723);
+  static const Color fleurdeSelCaramel = Color(0xFFCD7800);
+  static const Color bloodKiss = Color(0xFFC60C0C);
 
   static const Color background = cocosBlack;
+  static const Color appBarBackground = intheDark;
+  static const Color chatsAppBarBackground = satinDeepBlack;
+  static const Color dividerColor = Color(0xA6545854);
+
   static const Color notificationText = tin;
   static const Color dividerLine = tin;
   static const Color iconColor = tin;
@@ -24,7 +33,20 @@ class AppColors {
   static const Color switchOff = white;
 
   static const Color primaryTextColor = white;
+  static const Color secondaryTextColor = tin;
+
   static const Color authHintColor = silverPhoenix;
   static const Color borderColor = stoneCold;
   static const Color cursorColor = white;
+
+  // ChatsScreen
+  static const Color textFieldFill = Color(0x73000000);
+  static const Color pinnedChat = intheDark;
+  static const Color unpinnedChat = cocosBlack;
+
+  static const Color slidable1 = dimGray;
+  static const Color slidable2 = turfMaster;
+  static const Color slidable3 = fleurdeSelCaramel;
+  static const Color slidable4 = bloodKiss;
+  static const Color slidable5 = dimGray;
 }
