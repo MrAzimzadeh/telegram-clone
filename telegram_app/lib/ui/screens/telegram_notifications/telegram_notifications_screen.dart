@@ -11,15 +11,12 @@ class TelegramNotificationScreen extends StatelessWidget {
 Widget build(BuildContext context) {
   return Scaffold(
     body: SingleChildScrollView(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal:10.0),
-        child: Column(
-          children: const [
-            ShowNotificationsWidget(),
-            MessageNotificationsWidget(),
-            GroupNotificationsWidget(),
-          ],
-        ),
+      child: Column(
+        children:  [
+          ShowNotificationsWidget(),
+          MessageNotificationsWidget(),
+          GroupNotificationsWidget(),
+        ],
       ),
     ),
   );
