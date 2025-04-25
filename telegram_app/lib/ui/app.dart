@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:telegram_app/ui/screens/auth_screen/auth_screen.dart';
+import 'package:telegram_app/ui/screens/chats_screen/chats_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
