@@ -16,7 +16,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.topPadding = 8, // You can control this externally
   });
 
-  final String? title;
+  final Widget? title;
   final String? leading;
   final String? leadingButton;
   final Widget? actionWidget;
@@ -30,18 +30,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       backgroundColor: AppColors.chatsAppBarBackground,
       toolbarHeight: kToolbarHeight.h + topPadding.h,
-      title: Padding(
-        padding: EdgeInsets.only(top: topPadding.h),
-        child: Text(
-          title ?? "",
-          style: TextStyle(
-            color: AppColors.primaryTextColor,
-            fontFamily: 'SF-Pro-Text',
-            fontSize: 17.sp,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-      ),
+      title: Padding(padding: EdgeInsets.only(top: topPadding.h), child: title),
       centerTitle: true,
       leading: leading != null
           ? Padding(

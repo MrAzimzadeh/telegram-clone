@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:telegram_app/ui/screens/auth_screen/auth_screen.dart';
-import 'package:telegram_app/ui/screens/chats_screen/chats_screen.dart';
+import 'package:telegram_app/ui/screens/chat_screen/chat_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
         title: 'Telegram Clone',
         darkTheme: ThemeData.dark(),
         themeMode: ThemeMode.dark,
-        home: AuthScreen(),
+        home: ChatScreen(),
       ),
     );
   }

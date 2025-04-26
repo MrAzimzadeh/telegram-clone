@@ -12,7 +12,15 @@ class ChatsAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return CustomAppBar(
       leading: AppTexts.chatsLeading,
-      title: AppTexts.chatsTitle,
+      title: Text(
+        AppTexts.chatsTitle,
+        style: TextStyle(
+          color: AppColors.primaryTextColor,
+          fontFamily: 'SF-Pro-Text',
+          fontSize: 17.sp,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
       actionWidget: SvgPicture.asset(AppTexts.chatsEditIcon),
       bottomWidget: Padding(
         padding: EdgeInsets.symmetric(horizontal: 10.w),
@@ -28,7 +36,8 @@ class ChatsAppBar extends StatelessWidget implements PreferredSizeWidget {
                 filled: true,
                 fillColor: AppColors.textFieldFill,
                 isDense: true,
-                contentPadding: EdgeInsets.only(left: 73.w, top: 2.h, bottom: 2.h),
+                contentPadding:
+                    EdgeInsets.only(left: 73.w, top: 2.h, bottom: 2.h),
                 enabledBorder: OutlineInputBorder(borderSide: BorderSide.none),
                 focusedBorder: OutlineInputBorder(borderSide: BorderSide.none),
               ),

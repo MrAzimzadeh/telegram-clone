@@ -20,6 +20,7 @@ class AppColors {
   static const Color turfMaster = Color(0xFF08A723);
   static const Color fleurdeSelCaramel = Color(0xFFCD7800);
   static const Color bloodKiss = Color(0xFFC60C0C);
+  static const Color oil = Color(0xFF313131);
 
   static const Color background = cocosBlack;
   static const Color appBarBackground = intheDark;
@@ -49,4 +50,7 @@ class AppColors {
   static const Color slidable3 = fleurdeSelCaramel;
   static const Color slidable4 = bloodKiss;
   static const Color slidable5 = dimGray;
+
+  // ChatScreen
+  static const Color chatMessageContainer = oil;
 }
