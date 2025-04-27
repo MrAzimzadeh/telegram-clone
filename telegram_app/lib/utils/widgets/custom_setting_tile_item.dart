@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:telegram_app/constants/app_colors.dart';
 
-class SettingTileItem extends StatelessWidget {
+class CustomSettingTileItem extends StatelessWidget {
   final String title;
   final String? rightText;
-  final Widget icon;
+  final Widget? icon;
 
-  const SettingTileItem({
+  const CustomSettingTileItem({
     super.key,
-    required this.icon,
+    this.icon,
     required this.title,
     this.rightText,
   });
@@ -31,7 +31,7 @@ class SettingTileItem extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'SF-Pro-Text',
                   fontSize: 17.sp,
-                  color: AppColors.textColor,
+                  color: AppColors.light,
                   fontWeight: FontWeight.w400,
                 ),
               ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:telegram_app/ui/screens/telegram_privacy_security/widgets/auto_delete_acount.dart';
-import 'package:telegram_app/ui/screens/telegram_privacy_security/widgets/settings_tile.dart';
+import 'package:telegram_app/ui/screens/telegram_privacy_security/widgets/privacy_settings_tile.dart';
 import 'package:telegram_app/ui/screens/telegram_privacy_security/widgets/telegram_privacy_item.dart';
 
 class TelegramPrivacySecurityScreen extends StatelessWidget {
@@ -13,7 +13,7 @@ Widget build(BuildContext context) {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children:  [
-          SettingsTile(),
+          PrivacySettingsTile(),
           TelegramPrivacyItem(),
           AutoDeleteAcount(),
         ],
