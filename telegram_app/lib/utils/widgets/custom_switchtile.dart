@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:telegram_app/constants/app_colors.dart';
 
 class CustomSwitchTile extends StatelessWidget {
@@ -21,9 +22,10 @@ class CustomSwitchTile extends StatelessWidget {
         contentPadding: const EdgeInsets.symmetric(horizontal: 16),
         title: Text(
           title,
-          style: const TextStyle(
-            color: AppColors.primaryTextColor,
-            fontSize: 17,
+          style:  TextStyle(
+            color: AppColors.light,
+            fontFamily: 'SF-Pro-Text',
+            fontSize: 17.sp,
             fontWeight: FontWeight.w400,
           ),
         ),

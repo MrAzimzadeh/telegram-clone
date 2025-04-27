@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:telegram_app/constants/app_colors.dart';
 
-class SimpleTile extends StatelessWidget {
+class SettingTileItem extends StatelessWidget {
   final String title;
-  final String trailing;
+  final String? rightText;
+  final Widget icon;
 
-  const SimpleTile({
+  const SettingTileItem({
     super.key,
+    required this.icon,
     required this.title,
-    required this.trailing,
+    this.rightText,
   });
 
   @override
@@ -18,28 +20,23 @@ class SimpleTile extends StatelessWidget {
       color: AppColors.cocosBlack,
       child: ListTile(
         contentPadding: const EdgeInsets.symmetric(horizontal: 16),
-        title: Text(
-          title,
-          style:  TextStyle(
-            color: AppColors.light,
-            fontFamily: 'SF-Pro-Text',
-            fontSize: 16.sp,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
+        leading: icon,
+        title: Text(title),
         trailing: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(
-              trailing,
-              style:  TextStyle(
-                color: AppColors.textColor,
-                fontFamily: 'SF-Pro-Text',
-                fontSize: 14.sp,
-                fontWeight: FontWeight.w400,
+            if (rightText != null)
+              Text(
+                rightText!,
+                style: TextStyle(
+                  fontFamily: 'SF-Pro-Text',
+                  fontSize: 17.sp,
+                  color: AppColors.textColor,
+                  fontWeight: FontWeight.w400,
+                ),
               ),
-            ),
-            const Icon(
+            8.verticalSpace,
+            Icon(
               Icons.chevron_right,
               color: AppColors.iconColor,
             ),

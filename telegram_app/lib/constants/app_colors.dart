@@ -8,7 +8,7 @@ class AppColors {
   // static const Color primaryColor = Colors.purple;
 
   ///Gulara writing color
-  static const Color cocosBlack = Color(0xFF000000);
+  static const Color cocosBlack = Color.fromRGBO(28,28,29,1);
   static const Color tin = Color.fromRGBO(142, 142, 147, 1);
   static const Color pastelGreen = Color.fromRGBO(119, 213, 114, 1);
   static const Color white = Color.fromRGBO(255, 255, 255, 1);
@@ -32,6 +32,8 @@ class AppColors {
   static const Color iconColor = tin;
   static const Color switchOn = pastelGreen;
   static const Color switchOff = white;
+  static const Color textColor = tin;
+  static const Color light = white;
 
   static const Color primaryTextColor = white;
   static const Color secondaryTextColor = tin;

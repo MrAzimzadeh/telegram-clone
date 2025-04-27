@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:telegram_app/constants/app_colors.dart';
 import 'package:telegram_app/constants/app_texts.dart';
+import 'package:telegram_app/utils/widgets/custom_simple_tile.dart';
 import 'package:telegram_app/utils/widgets/custom_switchtile.dart';
-import 'simple_tile.dart';
 
 class GroupNotificationsWidget extends StatefulWidget {
   const GroupNotificationsWidget({super.key});
 
   @override
-  State<GroupNotificationsWidget> createState() => _GroupNotificationsWidgetState();
+  State<GroupNotificationsWidget> createState() =>
+      _GroupNotificationsWidgetState();
 }
 
 class _GroupNotificationsWidgetState extends State<GroupNotificationsWidget> {
@@ -20,28 +22,44 @@ class _GroupNotificationsWidgetState extends State<GroupNotificationsWidget> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(height: 42),
-        const Text(AppTexts.notifGroupShowNotifications),
-        SizedBox(height: 6),
+        42.verticalSpace,
+        Text(AppTexts.notifGroupShowNotifications,
+            style: TextStyle(
+              color: AppColors.light,
+              fontFamily: 'SF-Pro-Text',
+              fontSize: 17.sp,
+              fontWeight: FontWeight.w400,
+            )),
+        6.verticalSpace,
         const Divider(color: AppColors.dividerLine, height: 1),
         CustomSwitchTile(
           title: AppTexts.notifShowNotifications,
           value: showNotifications,
           onChanged: (val) => setState(() => showNotifications = val),
         ),
-        const Divider(color: AppColors.dividerLine,height: 1),
+        const Divider(color: AppColors.dividerLine, height: 1),
         CustomSwitchTile(
           title: AppTexts.notifMessagePreview,
           value: messagePreview,
           onChanged: (val) => setState(() => messagePreview = val),
         ),
         const Divider(color: AppColors.dividerLine, height: 1),
-        const SimpleTile(title: AppTexts.notifSound, trailing: AppTexts.notifSoundNone),
+        const CustomSimpleTile(
+            title: AppTexts.notifSound, trailing: AppTexts.notifSoundNone),
         const Divider(color: AppColors.dividerLine, height: 1),
-        const SimpleTile(title: AppTexts.notifExceptions, trailing: AppTexts.notifAddText),
+        const CustomSimpleTile(
+            title: AppTexts.notifExceptions, trailing: AppTexts.notifAddText),
         const Divider(color: AppColors.dividerLine, height: 1),
-        SizedBox(height: 7),
-        const Text(AppTexts.notifSetCustomNotifications),
+        7.verticalSpace,
+        Text(
+          AppTexts.notifSetCustomNotifications,
+          style: TextStyle(
+            color: AppColors.textColor,
+            fontFamily: 'SF-Pro-Text',
+            fontSize: 14.sp,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
       ],
     );
   }

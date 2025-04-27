@@ -59,7 +59,7 @@ class AppTexts {
   static const String auth1 = "+1";
   static const String authPhoneNumber = "Your phone number";
   static const String authSync = "Sync Contacts";
-
+  
   // ChatsScreen
   static const String chatsLeading = "Edit";
   static const String chatsTitle = "Chats";
