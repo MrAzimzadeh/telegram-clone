@@ -39,6 +39,7 @@ dependencies:
   flutter_svg: ^2.1.0
   flutter_slidable: ^4.0.0
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -64,6 +65,7 @@ flutter:
   assets:
     - assets/svg/
     - assets/png/
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

@@ -110,6 +110,7 @@ class AppTexts {
   static const String dataDisabled = "Disabled";
   static const String dataNever = "Never";
 
+  
   // ChatsScreen
   static const String chatsLeading = "Edit";
   static const String chatsTitle = "Chats";
