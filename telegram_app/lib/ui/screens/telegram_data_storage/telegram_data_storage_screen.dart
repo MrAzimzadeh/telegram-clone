@@ -8,14 +8,14 @@ import 'package:telegram_app/ui/screens/telegram_data_storage/widgets/data_setti
 import 'package:telegram_app/utils/widgets/custom_setting_tile_item.dart';
 import 'package:telegram_app/utils/widgets/custom_simple_tile.dart';
 
-class TelegramDataStorage extends StatefulWidget {
-  const TelegramDataStorage({super.key});
+class TelegramDataStorageScreen extends StatefulWidget {
+  const TelegramDataStorageScreen({super.key});
 
   @override
-  State<TelegramDataStorage> createState() => _TelegramDataStorageState();
+  State<TelegramDataStorageScreen> createState() => _TelegramDataStorageScreenState();
 }
 
-class _TelegramDataStorageState extends State<TelegramDataStorage> {
+class _TelegramDataStorageScreenState extends State<TelegramDataStorageScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
