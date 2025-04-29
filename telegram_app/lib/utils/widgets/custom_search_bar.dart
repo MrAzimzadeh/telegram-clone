@@ -23,36 +23,48 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
           borderRadius: BorderRadius.circular(10.r),
           border: Border.all(color: AppColors.textFieldFill, width: 1),
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.only(top: 8,),
-                child: TextField(
-                  controller: widget.controller,
-                  textAlign: TextAlign.center,
-                  decoration: InputDecoration(
-                    prefixIcon: Icon(
-                      Icons.search,
-                      color: AppColors.iconColor,
-                    ),
-                    hintText: 'Search',
-                    hintStyle: TextStyle(
-                      color: AppColors.textColor,
-                      fontFamily: 'SF-Pro-Text',
-                      fontSize: 17.sp,
-                      fontWeight: FontWeight.w400,
-                    ),
-                    border: InputBorder.none,
-                    isCollapsed: true,
+        child: Center(
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(
+                    Icons.search,
+                    color: AppColors.iconColor,
+                    size: 22.sp,
                   ),
-                ),
+                  8.horizontalSpace,
+                  if (widget.controller.text.isEmpty)
+                    Text(
+                      'Search',
+                      style: TextStyle(
+                        color: AppColors.textColor,
+                        fontFamily: 'SF-Pro-Text',
+                        fontSize: 17.sp,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                ],
               ),
-            ),
-          ],
+              TextField(
+                controller: widget.controller,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: AppColors.textColor,
+                  fontFamily: 'SF-Pro-Text',
+                  fontSize: 17.sp,
+                  fontWeight: FontWeight.w400,
+                ),
+                decoration: InputDecoration(
+                  border: InputBorder.none,
+                  contentPadding: EdgeInsets.symmetric(vertical: 8.h),
+                ),
+                onTap: () {},
+              ),
+            ],
+          ),
         ),
       ),
     );
