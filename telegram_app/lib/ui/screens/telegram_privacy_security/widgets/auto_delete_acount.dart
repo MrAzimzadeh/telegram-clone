@@ -4,9 +4,14 @@ import 'package:telegram_app/constants/app_colors.dart';
 import 'package:telegram_app/constants/app_texts.dart';
 import 'package:telegram_app/utils/widgets/custom_simple_tile.dart';
 
-class AutoDeleteAcount extends StatelessWidget {
+class AutoDeleteAcount extends StatefulWidget {
   const AutoDeleteAcount({super.key});
 
+  @override
+  State<AutoDeleteAcount> createState() => _AutoDeleteAcountState();
+}
+
+class _AutoDeleteAcountState extends State<AutoDeleteAcount> {
   @override
   Widget build(BuildContext context) {
     return Column(

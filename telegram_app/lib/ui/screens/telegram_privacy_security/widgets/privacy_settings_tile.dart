@@ -4,10 +4,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:telegram_app/constants/app_colors.dart';
 import 'package:telegram_app/constants/app_images.dart';
 import 'package:telegram_app/constants/app_texts.dart';
-import 'package:telegram_app/ui/screens/telegram_privacy_security/widgets/setting_tile_item.dart';
+import 'package:telegram_app/utils/widgets/custom_setting_tile_item.dart';
 
-class SettingsTile extends StatelessWidget {
-  const SettingsTile({super.key});
+class PrivacySettingsTile extends StatelessWidget {
+  const PrivacySettingsTile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class SettingsTile extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Divider(color: AppColors.dividerLine, height: 1),
-          SettingTileItem(
+          CustomSettingTileItem(
             title: AppTexts.privBlockedUsers,
             rightText: '9',
             icon: SvgPicture.asset(
@@ -27,7 +27,7 @@ class SettingsTile extends StatelessWidget {
             ),
           ),
           Divider(color: AppColors.dividerLine, height: 1),
-          SettingTileItem(
+          CustomSettingTileItem(
             icon: SvgPicture.asset(
               AppImages.activeSessionIcon,
             ),
@@ -35,7 +35,7 @@ class SettingsTile extends StatelessWidget {
             rightText: '2',
           ),
           Divider(color: AppColors.dividerLine, height: 1),
-          SettingTileItem(
+          CustomSettingTileItem(
             icon: SvgPicture.asset(
               AppImages.passcodeIcon,
               height: 29,
@@ -45,7 +45,7 @@ class SettingsTile extends StatelessWidget {
             rightText: 'Off',
           ),
           Divider(color: AppColors.dividerLine, height: 1),
-          SettingTileItem(
+          CustomSettingTileItem(
             icon: SvgPicture.asset(
               AppImages.lockIcon,
               height: 29,

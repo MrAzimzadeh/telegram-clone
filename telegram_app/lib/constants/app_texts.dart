@@ -59,6 +59,96 @@ class AppTexts {
   static const String auth1 = "+1";
   static const String authPhoneNumber = "Your phone number";
   static const String authSync = "Sync Contacts";
+
+  ///Telegram Notifications Texts @GULARA
+  static const String allAccounts = "All Accounts";
+  static const String showNotificationsFrom = "Show Notifications From";
+  static const String turnOffToReceiveNotifications =
+      "Turn this off if you want to receive notifications only from your active account.";
+  static const String messageNotifications = "Message Notifications";
+  static const String showNotifications = "Show Notifications";
+  static const String messagePreview = "Message Preview";
+  static const String sound = "Sound";
+  static const String exceptions = "Exceptions";
+  static const String chats = "66 Chats";
+  static const String setCustomNotifications =
+      "Set custom notifications for specific users.";
+  static const String groupShowNotifications = "Show Notifications for Groups";
+  static const String soundNone = "None";
+  static const String exceptionsText = "Exceptions";
+  static const String addText = "Add";
+
+  // Telegram Privacy and Security Texts @GULARA
+  static const String privacyTitle = "Privacy";
+  static const String privBlockedUsers = "Blocked Users";
+  static const String privActiveSessions = "Active Sessions";
+  static const String privPasscodeFaceID = "Passcode & Face ID";
+  static const String privTwoStepVerification = "Two-Step Verification";
+  static const String privPhoneNumber = "Phone Number";
+  static const String privLastSeenOnline = "Last Seen & Online";
+  static const String privProfilePhoto = "Profile Photo";
+  static const String privVoiceCalls = "Voice Calls";
+  static const String privForwardedMessages = "Forwarded Messages";
+  static const String privGroupsChannels = "Groups & Channels";
+  static const String privAutoDeleteAccount = "If Away For";
+  static const String privNobody = "Nobody";
+  static const String privEverybody = "Everybody";
+  static const String privMyContacts = "My Contacts";
+  static const String privNobodyPlus7 = "Nobody (+7)";
+  static const String privNobodyPlus14 = "Nobody (+14)";
+  static const String privAutoDeleteTitle = "Automatically delete my account";
+  static const String privIfAwayFor = "If Away For";
+  static const String privMonths = "6 Months";
+  static const String privAutoDeleteDescription =
+      "If you do not come online at least once within this period, your account will be deleted along with all messages and contacts.";
+
+  /// Telegram Data and Storage Texts @GULARA
+  static const String dataStorageUsageTitle = "Storage Usage";
+  static const String dataNetworkUsageTitle = "Network Usage";
+  static const String dataAutomaticMediaDownloadTitle =
+      "Automatic Media Download";
+  static const String dataResetDownloadSettings =
+      "Reset Auto-Download Settings";
+  static const String dataAutoPlayMedia = "Auto-Play Media";
+  static const String dataAutoDownloadVideo = "Videos";
+  static const String dataAutoDownloadGifs = "GIFs";
+  static const String dataUsingCellular = "Using Cellular";
+  static const String dataUsingWiFi = "Using Wi-Fi";
+  static const String dataUseLessDataTitle = "Use Less Data";
+  static const String dataOtherSettings = "Other";
+  static const String dataSaveIncomingPhoto = "Save Incoming Photos";
+  static const String dataDisabled = "Disabled";
+  static const String dataNever = "Never";
+
+ /// Telegram Language Texts @GULARA
+    static const String languageTitle = "Language";
+    static const String languageSearch = "Search";
+    static const String languageEnglish = "English";
+    static const String languageCountryEn = "English";
+    static const String languageCatalan = "Catalan";
+    static const String languageCountryCa = "Català";
+    static const String languageArabic = "Arabic";
+    static const String languageCountryAr = "العربية";
+    static const String languageDutch = "Dutch";
+    static const String languageCountryNl = "Nederlands";
+    static const String languageKorean = "Korean";
+    static const String languageCountryKo = "한국어";
+    static const String languagePersian = "Persian";
+    static const String languageCountryFa = "فارسی";
+    static const String languageGerman = "German";
+    static const String languageCountryDe = "Deutsch";
+    static const String languageFrench = "French";
+    static const String languageCountryFr = "Français";
+    static const String languageItalian = "Italian";
+    static const String languageCountryIt = "Italiano";
+    static const String languagMalay = "Malay";
+    static const String languageCountryMs = "Bahasa Melayu";
+    static const String languageIndonesian = "Indonesian";
+    static const String languageCountryId = "Bahasa Indonesia";
+    static const String languagePortuguese = "Portuguese";
+    static const String languageCountryBr = "Brazil";
+
+
   
   // ChatsScreen
   static const String chatsLeading = "Edit";
