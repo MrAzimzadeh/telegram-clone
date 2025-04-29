@@ -5,6 +5,16 @@ class AppTexts {
   static const String chatsEditIcon = "assets/svg/edit_icon.svg";
   static const String chatsSearch = "assets/svg/chat_search.svg";
   static const String chatsPinned = "assets/svg/pin_icon.svg";
+  static const String backButton = "assets/svg/back_button.svg";
+  static const String chatBackground = "assets/png/chatBackground.png";
+  static const String chatAction = "assets/png/chatAction.png";
+  static const String tick1 = "assets/svg/tick1.svg";
+  static const String tick2 = "assets/svg/tick2.svg";
+
+  static const String chatImage1 = "assets/png/chat_image1.png";
+  static const String chatImage2 = "assets/png/chat_image2.png";
+  static const String chatImage3 = "assets/png/chat_image3.png";
+  static const String chatImage4 = "assets/png/chat_image4.png";
 
   static const String slidableIcon1 = "assets/svg/slidable_icon1.svg";
   static const String slidableIcon2 = "assets/svg/slidable_icon2.svg";
@@ -174,4 +184,40 @@ class AppTexts {
   static const String slidableText3 = "Mute";
   static const String slidableText4 = "Delete";
   static const String slidableText5 = "Archive";
+
+  // ChatScreen
+  static const String chatTitle = "Martha Craig";
+  static const String chatSubtitle = "last seen just now";
+  static const String chatLeading = "Chats";
+
+  static const String date1 = "10:10";
+  static const String date2 = "10:15";
+  static const String date3 = "10:15";
+  static const String date4 = "11:40";
+  static const String date5 = "11:43";
+  static const String date6 = "11:45";
+  static const String date7 = "11:45";
+  static const String date8 = "11:50";
+  static const String date9 = "11:51";
+  static const String date10 = "11:51";
+
+  static const String chatMessage1 = "Japan looks amazing!";
+  static const String chatMessage2 = "Do you know what time is it?";
+  static const String chatMessage3 = "It’s morning in Tokyo";
+  static const String chatMessage4 = "What is the most popular meal in Japan?";
+  static const String chatMessage5 = "Do you like it?";
+  static const String chatMessage6 = "I think top two are:";
+
+  static const String replyPerson1 = "Martha Craig";
+  static const String replyMessage1 = "Good morning!";
+
+  static const String chatImageName1 = "IMG_0475.PNG";
+  static const String chatImageName2 = "IMG_0481.PNG";
+  static const String chatImageName3 = "IMG_0483.PNG";
+  static const String chatImageName4 = "IMG_0484.PNG";
+
+  static const String chatImageSize1 = "2.4 MB";
+  static const String chatImageSize2 = "2.8 MB";
+  static const String chatImageSize3 = "2.8 MB";
+  static const String chatImageSize4 = "2.6 MB";
 }
