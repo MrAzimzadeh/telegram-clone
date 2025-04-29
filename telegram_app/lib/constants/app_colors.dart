@@ -8,7 +8,7 @@ class AppColors {
   // static const Color primaryColor = Colors.purple;
 
   ///Gulara writing color
-  static const Color cocosBlack = Color.fromRGBO(28,28,29,1);
+  static const Color cocosBlack = Color.fromRGBO(28, 28, 29, 1);
   static const Color tin = Color.fromRGBO(142, 142, 147, 1);
   static const Color pastelGreen = Color.fromRGBO(119, 213, 114, 1);
   static const Color white = Color.fromRGBO(255, 255, 255, 1);
@@ -23,7 +23,7 @@ class AppColors {
   static const Color oil = Color(0xFF313131);
   static const Color greenMana = Color(0xFF28B772);
   static const Color strawberryAvalanche = Color(0xFFEB5545);
-
+  static const Color epicBlue = Color(0xFF037EE5);
 
   // Bunu deyisen omur boyu junior qalsin
   static const Color elmarinBackgroundColor = Colors.black;
@@ -33,6 +33,7 @@ class AppColors {
   static const Color chatsAppBarBackground = satinDeepBlack;
   static const Color dividerColor = Color(0xA6545854);
   static const Color deleteColor = strawberryAvalanche;
+  static const Color enabledColor = epicBlue;
 
   static const Color notificationText = tin;
   static const Color dividerLine = tin;
