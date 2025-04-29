@@ -10,6 +10,8 @@ class AppTexts {
   static const String chatAction = "assets/png/chatAction.png";
   static const String tick1 = "assets/svg/tick1.svg";
   static const String tick2 = "assets/svg/tick2.svg";
+  static const String infoProfile = "assets/png/infoProfile.png";
+  static const String infoArrowRight = "assets/svg/infoArrowRight.svg";
 
   static const String chatImage1 = "assets/png/chat_image1.png";
   static const String chatImage2 = "assets/png/chat_image2.png";
@@ -220,4 +222,21 @@ class AppTexts {
   static const String chatImageSize2 = "2.8 MB";
   static const String chatImageSize3 = "2.8 MB";
   static const String chatImageSize4 = "2.6 MB";
+
+  // InfoScreen
+  static const String infoAppBarLeading = "Cancel";
+  static const String infoAppBarTitle = "Info";
+  static const String infoAppBarActions = "Done";
+  static const String infoZack = "Zack";
+  static const String infoJohn = "John";
+  static const String infoMain = "main";
+  static const String infoNum1 = "+998 97 444 67 17";
+  static const String infoHome = "home";
+  static const String infoNum2 = "+998 90 934 50 44";
+  static const String infoBio = "bio";
+  static const String infoDesign = "Design adds value faster, than it adds cost";
+  static const String infoNotifications = "Notifications";
+  static const String infoEnabled = "Enabled";
+  static const String infoDelete = "Delete Contact";
+
 }

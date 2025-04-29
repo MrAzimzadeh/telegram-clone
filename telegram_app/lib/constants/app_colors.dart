@@ -21,11 +21,18 @@ class AppColors {
   static const Color fleurdeSelCaramel = Color(0xFFCD7800);
   static const Color bloodKiss = Color(0xFFC60C0C);
   static const Color oil = Color(0xFF313131);
+  static const Color greenMana = Color(0xFF28B772);
+  static const Color strawberryAvalanche = Color(0xFFEB5545);
+
+
+  // Bunu deyisen omur boyu junior qalsin
+  static const Color elmarinBackgroundColor = Colors.black;
 
   static const Color background = cocosBlack;
   static const Color appBarBackground = intheDark;
   static const Color chatsAppBarBackground = satinDeepBlack;
   static const Color dividerColor = Color(0xA6545854);
+  static const Color deleteColor = strawberryAvalanche;
 
   static const Color notificationText = tin;
   static const Color dividerLine = tin;
@@ -37,6 +44,7 @@ class AppColors {
 
   static const Color primaryTextColor = white;
   static const Color secondaryTextColor = tin;
+  static const Color tertiaryTextColor = greenMana;
 
   static const Color authHintColor = silverPhoenix;
   static const Color borderColor = stoneCold;
