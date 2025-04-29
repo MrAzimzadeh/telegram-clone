@@ -14,8 +14,18 @@ class InfoScreen extends StatelessWidget {
       backgroundColor: AppColors.elmarinBackgroundColor,
       appBar: CustomAppBar(
         leading: AppTexts.infoAppBarLeading,
-        title: Text(AppTexts.infoAppBarTitle),
-        actionWidget: Text(AppTexts.infoAppBarActions),
+        title: Text(
+          AppTexts.infoAppBarTitle,
+          style: TextStyle(
+              fontFamily: 'SF-Pro-Text',
+              fontWeight: FontWeight.w600,
+              fontSize: 17.sp),
+        ),
+        actionWidget: Text(AppTexts.infoAppBarActions, style: TextStyle(
+          fontFamily: 'SF-Pro-Text',
+          fontWeight: FontWeight.w400,
+          fontSize: 17.sp
+        ),),
       ),
       body: SingleChildScrollView(
         child: Padding(
