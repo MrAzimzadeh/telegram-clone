@@ -110,6 +110,35 @@ class AppTexts {
   static const String dataDisabled = "Disabled";
   static const String dataNever = "Never";
 
+ /// Telegram Language Texts @GULARA
+    static const String languageTitle = "Language";
+    static const String languageSearch = "Search";
+    static const String languageEnglish = "English";
+    static const String languageCountryEn = "English";
+    static const String languageCatalan = "Catalan";
+    static const String languageCountryCa = "Català";
+    static const String languageArabic = "Arabic";
+    static const String languageCountryAr = "العربية";
+    static const String languageDutch = "Dutch";
+    static const String languageCountryNl = "Nederlands";
+    static const String languageKorean = "Korean";
+    static const String languageCountryKo = "한국어";
+    static const String languagePersian = "Persian";
+    static const String languageCountryFa = "فارسی";
+    static const String languageGerman = "German";
+    static const String languageCountryDe = "Deutsch";
+    static const String languageFrench = "French";
+    static const String languageCountryFr = "Français";
+    static const String languageItalian = "Italian";
+    static const String languageCountryIt = "Italiano";
+    static const String languagMalay = "Malay";
+    static const String languageCountryMs = "Bahasa Melayu";
+    static const String languageIndonesian = "Indonesian";
+    static const String languageCountryId = "Bahasa Indonesia";
+    static const String languagePortuguese = "Portuguese";
+    static const String languageCountryBr = "Brazil";
+
+
   
   // ChatsScreen
   static const String chatsLeading = "Edit";
