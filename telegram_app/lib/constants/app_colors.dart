@@ -64,6 +64,5 @@ class AppColors {
 
   // ChatScreen
   static const Color chatMessageContainer = oil;
-
-  static var backgroundColor;
+  static const Color onlineColor = Color.fromRGBO(3, 126, 229, 1);
 }
