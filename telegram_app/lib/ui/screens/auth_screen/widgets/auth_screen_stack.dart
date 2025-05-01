@@ -58,7 +58,7 @@ class AuthScreenStack extends StatelessWidget {
             angle: math.pi,
             child: CustomPaint(
               painter: TrianglePainter(
-                strokeColor: AppColors.background,
+                strokeColor: AppColors.elmarinBackgroundColor,
                 strokeWidth: 1,
                 paintingStyle: PaintingStyle.fill,
               ),

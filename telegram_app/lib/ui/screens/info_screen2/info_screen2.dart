@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -16,6 +15,7 @@ class InfoScreen2 extends StatelessWidget {
       appBar: CustomAppBar(
         leadingButton: AppTexts.backButton,
         leading: AppTexts.info2Back,
+        onLeadingPressed: () => Navigator.of(context).pop(),
         title: Text(
           AppTexts.info2Info,
           style: TextStyle(
@@ -311,7 +311,7 @@ class InfoScreen2 extends StatelessWidget {
               Text(
                 AppTexts.info2BlockUser,
                 style: TextStyle(
-                  color: AppColors.deleteColor,
+                    color: AppColors.deleteColor,
                     fontFamily: 'SF-Pro-Text',
                     fontWeight: FontWeight.w400,
                     fontSize: 17.sp),

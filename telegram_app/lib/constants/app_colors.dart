@@ -64,4 +64,6 @@ class AppColors {
 
   // ChatScreen
   static const Color chatMessageContainer = oil;
+
+  static var backgroundColor;
 }
