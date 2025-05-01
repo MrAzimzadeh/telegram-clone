@@ -274,4 +274,9 @@ class AppTexts {
 
   // ChatBottomAppBar
   static const String bottomHintText = "Message";
+
+  // Contacts Screen
+  static const String contacts = 'Contacts';
+  static const String calls = 'Calls';
+  static const String settings = 'Settings';
 }
