@@ -5,6 +5,7 @@ class AppTexts {
   static const String chatsEditIcon = "assets/svg/edit_icon.svg";
   static const String chatsSearch = "assets/svg/chat_search.svg";
   static const String chatsPinned = "assets/svg/pin_icon.svg";
+  static const String chatsMuted = "assets/svg/isMuted.svg";
   static const String backButton = "assets/svg/back_button.svg";
   static const String chatBackground = "assets/png/chatBackground.png";
   static const String chatAction = "assets/png/chatAction.png";
@@ -13,6 +14,14 @@ class AppTexts {
   static const String infoProfile = "assets/png/infoProfile.png";
   static const String infoArrowRight = "assets/svg/infoArrowRight.svg";
   static const String infoCall = "assets/svg/infoCall.svg";
+  static const String bottomAttach = "assets/svg/bottomAttach.svg";
+  static const String bottomSticker = "assets/svg/bottomSticker.svg";
+  static const String bottomMic = "assets/svg/bottomMic.svg";
+
+  static const String modalUnread = "assets/svg/modalUnread.svg";
+  static const String modalPin = "assets/svg/modalPin.svg";
+  static const String modalMute = "assets/svg/modalMute.svg";
+  static const String modalDelete = "assets/svg/modalDelete.svg";
 
   static const String chatImage1 = "assets/png/chat_image1.png";
   static const String chatImage2 = "assets/png/chat_image2.png";
@@ -256,4 +265,13 @@ class AppTexts {
   static const String info2Enabled = "Enabled";
   static const String info2EnabledNumber = "1";
   static const String info2BlockUser = "Block User";
+
+  // ChatModal
+  static const String modalMarkasUnreadText = "Mark as Unread";
+  static const String modalPinText = "Pin";
+  static const String modalMuteText = "Mute";
+  static const String modalDeleteText = "Delete";
+
+  // ChatBottomAppBar
+  static const String bottomHintText = "Message";
 }

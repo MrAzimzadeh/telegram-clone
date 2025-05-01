@@ -5,9 +5,19 @@ import 'package:telegram_app/constants/app_colors.dart';
 import 'package:telegram_app/constants/app_texts.dart';
 import 'package:telegram_app/utils/widgets/custom_app_bar.dart';
 
-class ChatsAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const ChatsAppBar({super.key});
+class ChatsAppBar extends StatefulWidget implements PreferredSizeWidget {
+  const ChatsAppBar({super.key, required this.controller});
 
+  final TextEditingController controller;
+
+  @override
+  State<ChatsAppBar> createState() => _ChatsAppBarState();
+  
+  @override
+  Size get preferredSize => Size.fromHeight(kToolbarHeight + 55.h);
+}
+
+class _ChatsAppBarState extends State<ChatsAppBar> {
   @override
   Widget build(BuildContext context) {
     return CustomAppBar(
@@ -27,6 +37,7 @@ class ChatsAppBar extends StatelessWidget implements PreferredSizeWidget {
         child: Stack(
           children: [
             TextField(
+              controller: widget.controller,
               style: TextStyle(
                 fontFamily: 'SF-Pro-Text',
                 fontSize: 17.sp,
@@ -59,7 +70,4 @@ class ChatsAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
     );
   }
-
-  @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight + 55.h);
 }
