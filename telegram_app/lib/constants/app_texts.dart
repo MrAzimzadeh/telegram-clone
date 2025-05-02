@@ -148,6 +148,25 @@ class AppTexts {
     static const String languagePortuguese = "Portuguese";
     static const String languageCountryBr = "Brazil";
 
+    ///Telegram Apperance Texts @GULARA
+    static const String appearanceColorThemeTitle = "COLOR THEME";
+    static const String appearanceChatBackground = "Chat Background";
+    static const String appearanceAutoMode = "Auto-Night Mode";
+    static const String appearanceDay = "Day";
+    static const String appearanceNight = "Night";
+    static const String appearanceClassic = "Classic";
+    static const String appearanceTintedBlue = "Tinted Blue";
+    static const String appearanceTextSizeTitle = "TEXT SIZE";
+    static const String appearanceTextSize = "A";
+    static const String appearanceAppIconTitle = "APP ICON";
+
+    static const String appearReceiverMessage1 = "Bob Harris";
+    static const String appearReceiverMessage2 = "Good morning!";
+    static const String appearReceiverMessage3 = "Do you know what time it is?";
+    static const String appearSenderMessage = "It’s morning in Tokyo";
+
+
+
 
   
   // ChatsScreen

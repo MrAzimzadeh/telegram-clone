@@ -21,6 +21,14 @@ class AppColors {
   static const Color fleurdeSelCaramel = Color(0xFFCD7800);
   static const Color bloodKiss = Color(0xFFC60C0C);
   static const Color oil = Color(0xFF313131);
+  static const Color saltyIce = Color(0xFFCCE4F9);
+  static const Color herbalVapors = Color(0xFFE1FEC6);
+  static const Color nordicBreeze = Color(0xFFD4DDE6);
+  static const Color hadfieldBlue = Color(0xFF057AFE);
+  static const Color lead = Color(0xFF202020);
+  static const Color dark = Color(0xFF18222D);
+  static const Color blueWhale = Color(0xFF213140);
+  static const Color queenBlue = Color(0xFF3E6A97);
 
   static const Color background = cocosBlack;
   static const Color appBarBackground = intheDark;
