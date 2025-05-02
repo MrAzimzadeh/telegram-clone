@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:telegram_app/constants/app_colors.dart';
 import 'package:telegram_app/constants/app_texts.dart';
 import 'package:telegram_app/ui/screens/auth_screen/widgets/auth_screen_stack.dart';
+import 'package:telegram_app/ui/screens/chats_screen/chats_screen.dart';
 
 class AuthScreen extends StatefulWidget {
   const AuthScreen({super.key});
@@ -18,7 +19,7 @@ class _AuthScreenState extends State<AuthScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.background,
+      backgroundColor: AppColors.elmarinBackgroundColor,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(
@@ -37,13 +38,19 @@ class _AuthScreenState extends State<AuthScreen> {
                           fontSize: 17.sp,
                           fontWeight: FontWeight.w400),
                     ),
-                    Text(
-                      AppTexts.authNext,
-                      style: TextStyle(
-                          color: AppColors.primaryTextColor,
-                          fontFamily: 'SF-Pro-Text',
-                          fontSize: 17.sp,
-                          fontWeight: FontWeight.w600),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (context) => ChatsScreen()));
+                      },
+                      child: Text(
+                        AppTexts.authNext,
+                        style: TextStyle(
+                            color: AppColors.primaryTextColor,
+                            fontFamily: 'SF-Pro-Text',
+                            fontSize: 17.sp,
+                            fontWeight: FontWeight.w600),
+                      ),
                     )
                   ],
                 ),
