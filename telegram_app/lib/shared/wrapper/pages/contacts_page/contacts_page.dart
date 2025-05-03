@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:telegram_app/constants/app_colors.dart';
 import 'package:telegram_app/constants/app_texts.dart';
@@ -30,7 +31,10 @@ class _ContactsScreenState extends State<ContactsPage> {
       backgroundColor: AppColors.elmarinBackgroundColor,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(kToolbarHeight),
-        child: ThreeFeatureAppBar(title: AppTexts.contacts),
+        child: ThreeFeatureAppBar(
+          title: AppTexts.contacts,
+          suffix: Icon(CupertinoIcons.add),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.only(left: 15.0),

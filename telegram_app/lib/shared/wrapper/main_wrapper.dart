@@ -5,9 +5,10 @@ import 'package:telegram_app/constants/app_colors.dart';
 import 'package:telegram_app/constants/app_images.dart';
 import 'package:telegram_app/constants/app_texts.dart';
 import 'package:telegram_app/shared/wrapper/pages/calls_page/calls_page.dart';
-import 'package:telegram_app/shared/wrapper/pages/chats_page/chats_page.dart';
+
 import 'package:telegram_app/shared/wrapper/pages/contacts_page/contacts_page.dart';
 import 'package:telegram_app/shared/wrapper/pages/settings_page/settings_page.dart';
+import 'package:telegram_app/ui/screens/chats_screen/chats_screen.dart';
 
 class MainWrapper extends StatefulWidget {
   const MainWrapper({super.key});
@@ -38,7 +39,7 @@ class _MainWrapperState extends State<MainWrapper> {
   final List<Widget> pages = [
     ContactsPage(),
     CallsPage(),
-    ChatsPage(),
+    ChatsScreen(),
     SettingsPage()
   ];
 
@@ -47,6 +48,7 @@ class _MainWrapperState extends State<MainWrapper> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.chatsAppBarBackground,
       bottomNavigationBar: _buildBottomNavBar(),
       body: pages[currentIndex],
     );
@@ -54,6 +56,8 @@ class _MainWrapperState extends State<MainWrapper> {
 
   BottomNavigationBar _buildBottomNavBar() {
     return BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: AppColors.chatsAppBarBackground,
         selectedItemColor: AppColors.white,
         unselectedItemColor: AppColors.dividerColor,
         showUnselectedLabels: true,

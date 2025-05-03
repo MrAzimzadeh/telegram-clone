@@ -82,7 +82,7 @@ class AppTexts {
   static const String messagePreview = "Message Preview";
   static const String sound = "Sound";
   static const String exceptions = "Exceptions";
-  static const String chats = "66 Chats";
+  static const String chats = "Chats";
   static const String setCustomNotifications =
       "Set custom notifications for specific users.";
   static const String groupShowNotifications = "Show Notifications for Groups";
@@ -275,8 +275,35 @@ class AppTexts {
   // ChatBottomAppBar
   static const String bottomHintText = "Message";
 
-  // Contacts Screen
+  // Contacts page
   static const String contacts = 'Contacts';
   static const String calls = 'Calls';
   static const String settings = 'Settings';
+
+  // settings page
+  static const String search = 'Search';
+  static const String fullName = 'Jacob W.';
+  static const String phoneNumber = '+1 202 555 01 47';
+  static const String userName = '@jacob_d';
+
+  // edit profile screen
+  static const String editProfile = 'Edit Profile';
+  static const String done = 'Done';
+  static const String enterYourName =
+      'Enter Your Name and add an optional profile photo.';
+  static const String digital = 'Digital goodies designer - Pixseliz';
+  static const String anyDetails =
+      'Any details such as age, occupation or city. Example: 23 y.o. designer from San Francisco.';
+  static const String changeNumber = 'Change Number';
+  static const String username = 'Username';
+  static const String addAccount = 'Add Account';
+  static const String logOut = 'Log Out';
+  static const String choosePhoto = 'Choose Photo';
+  static const String webSearch = 'Web Search';
+  static const String viewPhoto = 'View Photo';
+  static const String removePhoto = 'Remove Photo';
+  static const String cancel = 'Cancel';
+
+  // calls page
+  static const String edit = 'Edit';
 }
