@@ -6,7 +6,6 @@ import 'package:telegram_app/ui/screens/telegram_notifications/widgets/show_noti
 class TelegramNotificationScreen extends StatelessWidget {
   const TelegramNotificationScreen({super.key});
 
-  @override
  @override
 Widget build(BuildContext context) {
   return Scaffold(

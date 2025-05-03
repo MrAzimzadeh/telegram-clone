@@ -30,7 +30,6 @@ class _ThemeAppColorState extends State<ThemeAppColor> {
       color: AppColors.background,
       child: ListView.separated(
         shrinkWrap: true,
-        physics: NeverScrollableScrollPhysics(),
         padding: const EdgeInsets.symmetric(horizontal: 16),
         scrollDirection: Axis.horizontal,
         itemCount: ThemeAppColor._items.length,

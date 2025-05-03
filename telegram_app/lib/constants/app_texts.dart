@@ -132,54 +132,6 @@ class AppTexts {
   static const String dataDisabled = "Disabled";
   static const String dataNever = "Never";
 
-
- /// Telegram Language Texts @GULARA
-    static const String languageTitle = "Language";
-    static const String languageSearch = "Search";
-    static const String languageEnglish = "English";
-    static const String languageCountryEn = "English";
-    static const String languageCatalan = "Catalan";
-    static const String languageCountryCa = "Català";
-    static const String languageArabic = "Arabic";
-    static const String languageCountryAr = "العربية";
-    static const String languageDutch = "Dutch";
-    static const String languageCountryNl = "Nederlands";
-    static const String languageKorean = "Korean";
-    static const String languageCountryKo = "한국어";
-    static const String languagePersian = "Persian";
-    static const String languageCountryFa = "فارسی";
-    static const String languageGerman = "German";
-    static const String languageCountryDe = "Deutsch";
-    static const String languageFrench = "French";
-    static const String languageCountryFr = "Français";
-    static const String languageItalian = "Italian";
-    static const String languageCountryIt = "Italiano";
-    static const String languagMalay = "Malay";
-    static const String languageCountryMs = "Bahasa Melayu";
-    static const String languageIndonesian = "Indonesian";
-    static const String languageCountryId = "Bahasa Indonesia";
-    static const String languagePortuguese = "Portuguese";
-    static const String languageCountryBr = "Brazil";
-
-    ///Telegram Apperance Texts @GULARA
-    static const String appearanceColorThemeTitle = "COLOR THEME";
-    static const String appearanceChatBackground = "Chat Background";
-    static const String appearanceAutoMode = "Auto-Night Mode";
-    static const String appearanceDay = "Day";
-    static const String appearanceNight = "Night";
-    static const String appearanceClassic = "Classic";
-    static const String appearanceTintedBlue = "Tinted Blue";
-    static const String appearanceTextSizeTitle = "TEXT SIZE";
-    static const String appearanceTextSize = "A";
-    static const String appearanceAppIconTitle = "APP ICON";
-
-    static const String appearReceiverMessage1 = "Bob Harris";
-    static const String appearReceiverMessage2 = "Good morning!";
-    static const String appearReceiverMessage3 = "Do you know what time it is?";
-    static const String appearSenderMessage = "It’s morning in Tokyo";
-
-
-
   /// Telegram Language Texts @GULARA
   static const String languageTitle = "Language";
   static const String languageSearch = "Search";
@@ -207,6 +159,23 @@ class AppTexts {
   static const String languageCountryId = "Bahasa Indonesia";
   static const String languagePortuguese = "Portuguese";
   static const String languageCountryBr = "Brazil";
+
+  ///Telegram Apperance Texts @GULARA
+  static const String appearanceColorThemeTitle = "COLOR THEME";
+  static const String appearanceChatBackground = "Chat Background";
+  static const String appearanceAutoMode = "Auto-Night Mode";
+  static const String appearanceDay = "Day";
+  static const String appearanceNight = "Night";
+  static const String appearanceClassic = "Classic";
+  static const String appearanceTintedBlue = "Tinted Blue";
+  static const String appearanceTextSizeTitle = "TEXT SIZE";
+  static const String appearanceTextSize = "A";
+  static const String appearanceAppIconTitle = "APP ICON";
+
+  static const String appearReceiverMessage1 = "Bob Harris";
+  static const String appearReceiverMessage2 = "Good morning!";
+  static const String appearReceiverMessage3 = "Do you know what time it is?";
+  static const String appearSenderMessage = "It’s morning in Tokyo";
 
   // ChatsScreen
   static const String chatsLeading = "Edit";
