@@ -1,11 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:telegram_app/constants/app_colors.dart';
 
 class ThreeFeatureAppBar extends StatelessWidget {
-  const ThreeFeatureAppBar({super.key, required this.title});
+  const ThreeFeatureAppBar({super.key, required this.title, this.suffix});
   final String title;
+  final Widget? suffix;
 
   @override
   Widget build(BuildContext context) {
@@ -21,13 +21,7 @@ class ThreeFeatureAppBar extends StatelessWidget {
       ),
       backgroundColor: AppColors.chatsAppBarBackground,
       actions: [
-        Padding(
-          padding: const EdgeInsets.only(right: 16.0),
-          child: Icon(
-            CupertinoIcons.add,
-            color: AppColors.white,
-          ),
-        )
+        Padding(padding: const EdgeInsets.only(right: 16.0), child: suffix)
       ],
     );
   }

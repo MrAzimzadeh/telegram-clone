@@ -28,4 +28,8 @@ class AppImages {
   static const String chatBg = '${appAssets}chat_bg.svg';
   static const String chatBgOther = '${appAssets}chat_bg_me.svg';
   static const String chatReadIcon = '${appAssets}read_icon.svg';
+
+static const String serchIcon = '${appAssets}chat_search.svg';
+  static const String editProfile = '${appPngs}edit_profile.png';
+  static const String settingDesign = '${appPngs}settings_design.png';
 }

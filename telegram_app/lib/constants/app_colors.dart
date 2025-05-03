@@ -73,4 +73,7 @@ class AppColors {
   // ChatScreen
   static const Color chatMessageContainer = oil;
   static const Color onlineColor = Color.fromRGBO(3, 126, 229, 1);
+
+  // Edit Profile Screen
+  static const Color changeProfile = Color.fromARGB(139, 0, 0, 0);
 }
